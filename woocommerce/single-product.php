@@ -23,8 +23,8 @@ get_header(); ?>
     <div class="grid lg:grid-cols-2 gap-12">
       <!-- Product Image -->
       <div>
-        <div class="bg-linear-to-br from-green-500/20 to-green-500/20 rounded-2xl p-12 border border-gray-700 mb-4">
-          <div class="w-48 h-48 bg-linear-to-br from-green-500 to-green-500 rounded-3xl flex items-center justify-center mx-auto">
+        <div class="bg-linear-to-br from-sky-500/20 to-sky-500/20 rounded-2xl p-12 border border-gray-700 mb-4">
+          <div class="w-48 h-48 bg-linear-to-br from-sky-500 to-sky-500 rounded-3xl flex items-center justify-center mx-auto">
             <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
             </svg>
@@ -34,13 +34,13 @@ get_header(); ?>
         <!-- Trust Badges -->
         <div class="grid grid-cols-3 gap-4">
           <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
-            <svg class="w-8 h-8 text-green-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-sky-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
             </svg>
             <div class="text-sm font-semibold">99.9% Uptime</div>
           </div>
           <div class="bg-gray-800 rounded-lg p-4 text-center border border-gray-700">
-            <svg class="w-8 h-8 text-green-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-8 h-8 text-sky-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
             </svg>
             <div class="text-sm font-semibold">Fast Delivery</div>
@@ -57,7 +57,7 @@ get_header(); ?>
       <!-- Product Info -->
       <div x-data="{ selectedPlan: 'monthly', quantity: 1 }">
         <!-- Popular Badge -->
-        <div class="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+        <div class="inline-block bg-sky-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
           Most Popular
         </div>
 
@@ -88,7 +88,7 @@ get_header(); ?>
         <!-- Price -->
         <div class="mb-6">
           <div class="flex items-baseline gap-2">
-            <span class="text-5xl font-bold text-green-400">$79</span>
+            <span class="text-5xl font-bold text-sky-400">$79</span>
             <span class="text-2xl text-gray-400">/month</span>
           </div>
           <p class="text-gray-400 mt-2">Save 20% with annual billing</p>
@@ -103,12 +103,12 @@ get_header(); ?>
         <div class="mb-6">
           <label class="block text-sm font-semibold mb-3">Billing Cycle</label>
           <div class="flex gap-3">
-            <button @click="selectedPlan = 'monthly'" :class="selectedPlan === 'monthly' ? 'bg-green-500 border-green-500' : 'bg-gray-800 border-gray-700'" class="flex-1 px-6 py-3 rounded-lg border-2 hover:border-green-500 transition">
+            <button @click="selectedPlan = 'monthly'" :class="selectedPlan === 'monthly' ? 'bg-sky-500 border-sky-500' : 'bg-gray-800 border-gray-700'" class="flex-1 px-6 py-3 rounded-lg border-2 hover:border-sky-500 transition">
               <div class="font-semibold">Monthly</div>
               <div class="text-sm text-gray-400">$79/mo</div>
             </button>
-            <button @click="selectedPlan = 'annual'" :class="selectedPlan === 'annual' ? 'bg-green-500 border-green-500' : 'bg-gray-800 border-gray-700'" class="flex-1 px-6 py-3 rounded-lg border-2 hover:border-green-500 transition relative">
-              <div class="absolute -top-2 -right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">Save 20%</div>
+            <button @click="selectedPlan = 'annual'" :class="selectedPlan === 'annual' ? 'bg-sky-500 border-sky-500' : 'bg-gray-800 border-gray-700'" class="flex-1 px-6 py-3 rounded-lg border-2 hover:border-sky-500 transition relative">
+              <div class="absolute -top-2 -right-2 bg-sky-500 text-white text-xs px-2 py-1 rounded-full">Save 20%</div>
               <div class="font-semibold">Annual</div>
               <div class="text-sm text-gray-400">$63/mo</div>
             </button>
@@ -124,7 +124,7 @@ get_header(); ?>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
               </svg>
             </button>
-            <input type="number" x-model="quantity" min="1" class="w-20 h-12 bg-gray-800 rounded-lg text-center border border-gray-700 focus:outline-none focus:border-green-500">
+            <input type="number" x-model="quantity" min="1" class="w-20 h-12 bg-gray-800 rounded-lg text-center border border-gray-700 focus:outline-none focus:border-sky-500">
             <button @click="quantity++" class="w-12 h-12 bg-gray-800 rounded-lg hover:bg-gray-700 transition border border-gray-700">
               <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
@@ -135,7 +135,7 @@ get_header(); ?>
 
         <!-- Action Buttons -->
         <div class="flex gap-4 mb-8">
-          <button class="flex-1 bg-linear-to-r from-green-500 to-green-500 text-white px-8 py-4 rounded-lg hover:from-green-600 hover:to-green-600 transition text-lg font-semibold">
+          <button class="flex-1 bg-linear-to-r from-sky-500 to-sky-500 text-white px-8 py-4 rounded-lg hover:from-sky-600 hover:to-sky-600 transition text-lg font-semibold">
             Add to Cart
           </button>
           <button class="w-14 h-14 bg-gray-800 rounded-lg hover:bg-gray-700 transition border border-gray-700">
@@ -150,49 +150,49 @@ get_header(); ?>
           <h3 class="font-semibold mb-4">What's Included:</h3>
           <ul class="space-y-3">
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               50,000 SMS messages per month
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Advanced API with webhooks
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Custom sender ID
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Real-time delivery reports
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Priority 24/7 support
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Contact list management
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               Scheduled messaging
             </li>
             <li class="flex items-center text-gray-300">
-              <svg class="w-5 h-5 text-green-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-sky-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
               99.9% uptime SLA
@@ -206,13 +206,13 @@ get_header(); ?>
     <div class="mt-16" x-data="{ activeTab: 'description' }">
       <!-- Tab Headers -->
       <div class="flex gap-4 border-b border-gray-700 mb-8">
-        <button @click="activeTab = 'description'" :class="activeTab === 'description' ? 'border-green-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
+        <button @click="activeTab = 'description'" :class="activeTab === 'description' ? 'border-sky-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
           Description
         </button>
-        <button @click="activeTab = 'features'" :class="activeTab === 'features' ? 'border-green-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
+        <button @click="activeTab = 'features'" :class="activeTab === 'features' ? 'border-sky-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
           Features
         </button>
-        <button @click="activeTab = 'reviews'" :class="activeTab === 'reviews' ? 'border-green-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
+        <button @click="activeTab = 'reviews'" :class="activeTab === 'reviews' ? 'border-sky-500 text-white' : 'border-transparent text-gray-400'" class="px-6 py-3 border-b-2 font-semibold transition">
           Reviews (124)
         </button>
       </div>
@@ -289,7 +289,7 @@ get_header(); ?>
             <div class="flex items-start justify-between mb-4">
               <div>
                 <div class="flex items-center gap-3 mb-2">
-                  <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center font-bold">
+                  <div class="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center font-bold">
                     JS
                   </div>
                   <div>
@@ -380,9 +380,9 @@ get_header(); ?>
       <h2 class="text-3xl font-bold mb-8">Related Products</h2>
       <div class="grid md:grid-cols-4 gap-6">
         <!-- Related Product 1 -->
-        <a href="single-product.html?product=sms-starter" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-500 transition group">
-          <div class="bg-linear-to-br from-green-500/20 to-green-500/20 p-8 text-center">
-            <div class="w-12 h-12 bg-linear-to-br from-green-500 to-green-500 rounded-xl flex items-center justify-center mx-auto">
+        <a href="single-product.html?product=sms-starter" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-sky-500 transition group">
+          <div class="bg-linear-to-br from-sky-500/20 to-sky-500/20 p-8 text-center">
+            <div class="w-12 h-12 bg-linear-to-br from-sky-500 to-sky-500 rounded-xl flex items-center justify-center mx-auto">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
               </svg>
@@ -390,12 +390,12 @@ get_header(); ?>
           </div>
           <div class="p-4">
             <h3 class="font-semibold mb-2">SMS Panel Starter</h3>
-            <div class="text-2xl font-bold text-green-400">$29<span class="text-sm text-gray-400">/mo</span></div>
+            <div class="text-2xl font-bold text-sky-400">$29<span class="text-sm text-gray-400">/mo</span></div>
           </div>
         </a>
 
         <!-- Related Product 2 -->
-        <a href="single-product.html?product=vps-hosting" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-500 transition group">
+        <a href="single-product.html?product=vps-hosting" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-sky-500 transition group">
           <div class="bg-linear-to-br from-orange-500/20 to-red-500/20 p-8 text-center">
             <div class="w-12 h-12 bg-linear-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -410,9 +410,9 @@ get_header(); ?>
         </a>
 
         <!-- Related Product 3 -->
-        <a href="single-product.html?product=domain-com" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-500 transition group">
-          <div class="bg-linear-to-br from-teal-500/20 to-green-500/20 p-8 text-center">
-            <div class="w-12 h-12 bg-linear-to-br from-teal-500 to-green-500 rounded-xl flex items-center justify-center mx-auto">
+        <a href="single-product.html?product=domain-com" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-sky-500 transition group">
+          <div class="bg-linear-to-br from-teal-500/20 to-sky-500/20 p-8 text-center">
+            <div class="w-12 h-12 bg-linear-to-br from-teal-500 to-sky-500 rounded-xl flex items-center justify-center mx-auto">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
               </svg>
@@ -425,7 +425,7 @@ get_header(); ?>
         </a>
 
         <!-- Related Product 4 -->
-        <a href="single-product.html?product=ssl-certificate" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-green-500 transition group">
+        <a href="single-product.html?product=ssl-certificate" class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-sky-500 transition group">
           <div class="bg-linear-to-br from-pink-500/20 to-rose-500/20 p-8 text-center">
             <div class="w-12 h-12 bg-linear-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mx-auto">
               <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

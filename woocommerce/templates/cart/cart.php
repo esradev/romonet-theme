@@ -14,7 +14,7 @@ get_header(); ?>
             <i class="fas fa-shopping-cart text-6xl text-slate-700 mb-4"></i>
             <h2 class="text-2xl font-bold mb-2">Your cart is empty</h2>
             <p class="text-slate-400 mb-6">Add some services to get started</p>
-            <a href="services.html" class="inline-block px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-semibold transition-colors">
+            <a href="services.html" class="inline-block px-8 py-3 bg-sky-600 hover:bg-sky-700 rounded-lg font-semibold transition-colors">
               Browse Services
             </a>
           </div>
@@ -38,7 +38,7 @@ get_header(); ?>
                   </button>
                 </div>
                 <div class="text-right min-w-24">
-                  <div class="text-xl font-bold text-green-400" x-text="'$' + (item.price * item.quantity).toFixed(2)"></div>
+                  <div class="text-xl font-bold text-sky-400" x-text="'$' + (item.price * item.quantity).toFixed(2)"></div>
                 </div>
                 <button @click="removeItem(index)" class="w-10 h-10 bg-red-500/10 hover:bg-red-500/20 text-red-400 rounded-lg flex items-center justify-center transition-colors">
                   <i class="fas fa-trash"></i>
@@ -66,16 +66,16 @@ get_header(); ?>
             <div class="border-t border-slate-800 pt-4">
               <div class="flex items-center justify-between text-xl font-bold">
                 <span>Total</span>
-                <span class="text-green-400" x-text="'$' + total.toFixed(2)"></span>
+                <span class="text-sky-400" x-text="'$' + total.toFixed(2)"></span>
               </div>
             </div>
           </div>
 
-          <a href="checkout.html" class="block w-full px-6 py-4 bg-linear-to-r from-green-600 to-green-600 hover:from-green-700 hover:to-green-700 rounded-lg font-semibold text-center transition-all mb-4">
+          <a href="checkout.html" class="block w-full px-6 py-4 bg-linear-to-r from-sky-600 to-sky-600 hover:from-sky-700 hover:to-sky-700 rounded-lg font-semibold text-center transition-all mb-4">
             Proceed to Checkout
           </a>
 
-          <a href="services.html" class="block w-full px-6 py-3 border border-slate-700 hover:border-green-500 rounded-lg font-semibold text-center transition-colors">
+          <a href="services.html" class="block w-full px-6 py-3 border border-slate-700 hover:border-sky-500 rounded-lg font-semibold text-center transition-colors">
             Continue Shopping
           </a>
         </div>

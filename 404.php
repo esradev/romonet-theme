@@ -5,7 +5,7 @@
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <!-- Large 404 Number -->
     <div class="mb-8">
-      <h1 class="text-9xl md:text-[200px] font-bold bg-linear-to-r from-green-500 via-green-400 to-green-500 bg-clip-text text-transparent leading-none">
+      <h1 class="text-9xl md:text-[200px] font-bold bg-linear-to-r from-sky-500 via-sky-400 to-sky-500 bg-clip-text text-transparent leading-none">
         404
       </h1>
     </div>
@@ -23,7 +23,7 @@
 
     <!-- Action Buttons -->
     <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-      <a href="index.html" class="bg-linear-to-r from-green-600 to-green-600 px-8 py-3 rounded-lg hover:from-green-700 hover:to-green-700 transition inline-flex items-center justify-center">
+      <a href="index.html" class="bg-linear-to-r from-sky-600 to-sky-600 px-8 py-3 rounded-lg hover:from-sky-700 hover:to-sky-700 transition inline-flex items-center justify-center">
         <i class="fas fa-home mr-2"></i>
         Go to Homepage
       </a>
@@ -38,30 +38,30 @@
       <h3 class="text-xl font-semibold mb-6">Perhaps you were looking for:</h3>
       <div class="grid md:grid-cols-2 gap-4 text-left">
         <a href="services.html" class="flex items-center gap-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition group">
-          <i class="fas fa-server text-green-400 text-2xl"></i>
+          <i class="fas fa-server text-sky-400 text-2xl"></i>
           <div>
-            <div class="font-semibold group-hover:text-green-400 transition">Our Services</div>
+            <div class="font-semibold group-hover:text-sky-400 transition">Our Services</div>
             <div class="text-sm text-gray-400">Browse all services</div>
           </div>
         </a>
         <a href="pricing.html" class="flex items-center gap-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition group">
-          <i class="fas fa-tag text-green-400 text-2xl"></i>
+          <i class="fas fa-tag text-sky-400 text-2xl"></i>
           <div>
-            <div class="font-semibold group-hover:text-green-400 transition">Pricing Plans</div>
+            <div class="font-semibold group-hover:text-sky-400 transition">Pricing Plans</div>
             <div class="text-sm text-gray-400">View pricing options</div>
           </div>
         </a>
         <a href="blog.html" class="flex items-center gap-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition group">
-          <i class="fas fa-blog text-green-400 text-2xl"></i>
+          <i class="fas fa-blog text-sky-400 text-2xl"></i>
           <div>
-            <div class="font-semibold group-hover:text-green-400 transition">Blog</div>
+            <div class="font-semibold group-hover:text-sky-400 transition">Blog</div>
             <div class="text-sm text-gray-400">Read our articles</div>
           </div>
         </a>
         <a href="shop.html" class="flex items-center gap-3 p-4 bg-gray-800/50 rounded-lg hover:bg-gray-800 transition group">
-          <i class="fas fa-shopping-cart text-green-400 text-2xl"></i>
+          <i class="fas fa-shopping-cart text-sky-400 text-2xl"></i>
           <div>
-            <div class="font-semibold group-hover:text-green-400 transition">Shop</div>
+            <div class="font-semibold group-hover:text-sky-400 transition">Shop</div>
             <div class="text-sm text-gray-400">Browse products</div>
           </div>
         </a>
@@ -75,8 +75,8 @@
           type="text"
           name="q"
           placeholder="Search our site..."
-          class="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-green-500 pr-12">
-        <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-green-400 transition">
+          class="w-full px-6 py-4 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-sky-500 pr-12">
+        <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-sky-400 transition">
           <i class="fas fa-search text-xl"></i>
         </button>
       </form>
