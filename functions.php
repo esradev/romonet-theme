@@ -14,6 +14,13 @@ function boilerplate_add_support()
   add_theme_support('post-thumbnails');
   add_theme_support('custom-logo');
   add_theme_support('menus');
+
+  load_theme_textdomain('romonet', get_template_directory() . '/languages');
+
+  register_nav_menus(array(
+    'primary' => __('Primary Menu', 'romonet'),
+    'footer'  => __('Footer Menu', 'romonet'),
+  ));
 }
 
 add_action('after_setup_theme', 'boilerplate_add_support');
@@ -47,23 +54,36 @@ function single_product_template($template)
 
 function cart_template($template)
 {
-  if (function_exists('is_cart') && class_exists('WC_Cart')) {
-    if (is_cart() && WC()->cart->is_empty()) {
-      return get_template_directory() . '/woocommerce/templates/cart/empty-cart.php';
-    } elseif (is_cart()) {
-      return get_template_directory() . '/woocommerce/templates/cart/cart.php';
+  if (function_exists('is_cart') && function_exists('WC') && class_exists('WC_Cart')) {
+    if (is_cart()) {
+      if (WC()->cart && WC()->cart->is_empty()) {
+        $custom_template = get_template_directory() . '/woocommerce/templates/cart/empty-cart.php';
+        if (file_exists($custom_template)) {
+          return $custom_template;
+        }
+      } else {
+        $custom_template = get_template_directory() . '/woocommerce/templates/cart/cart.php';
+        if (file_exists($custom_template)) {
+          return $custom_template;
+        }
+      }
     }
-    return $template;
   }
+
+  return $template;
 }
 
 function checkout_template($template)
 {
   if (function_exists('is_checkout') && class_exists('WC_Checkout')) {
     if (is_checkout()) {
-      return get_template_directory() . '/woocommerce/templates/checkout/checkout.php';
+      $custom_template = get_template_directory() . '/woocommerce/templates/checkout/checkout.php';
+      if (file_exists($custom_template)) {
+        return $custom_template;
+      }
     }
   }
+
   return $template;
 }
 
@@ -95,12 +115,20 @@ function my_account_template($template)
 
 function thank_you_template($order_id)
 {
-  if (function_exists('wc_get_order')) {
-    $order = wc_get_order($order_id);
+  if (!function_exists('wc_get_order')) {
+    return;
+  }
 
-    if ($order) {
-      return get_template_directory() . '/woocommerce/templates/thank-you/thank-you.php';
-    }
+  $order = wc_get_order($order_id);
+
+  if (!$order) {
+    return;
+  }
+
+  $template = get_template_directory() . '/woocommerce/templates/thank-you/thank-you.php';
+
+  if (file_exists($template)) {
+    include $template;
   }
 }
 
